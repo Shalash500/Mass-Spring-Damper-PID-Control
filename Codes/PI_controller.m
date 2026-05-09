@@ -7,5 +7,5 @@ ki = 1.97608543136126;
 kd = 0;
 c = pid(kp, ki, kd);
 T = feedback(c*transfer_fnc, 1);
-step(3*T, 9)
+step(T, 9)
 info = stepinfo(T)
